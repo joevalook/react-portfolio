@@ -4,12 +4,13 @@ import JoeJ2 from '../../assets/images/JoeJ2.png'
 import Joevalookaran from '../../assets/images/Joevalookaran.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const SideBar = () => (
   <div className='nav-bar'>
     <Link className='logo' to='/'>
-      <img src= {JoeJ2} alt="logo" />
-      <img className="sub-logo" src= {Joevalookaran} alt="slobodan" />
+      <img src={JoeJ2} alt="logo" />
+      <img className="sub-logo" src={Joevalookaran} alt="slobodan" />
     </Link>
     <nav>
       <NavLink exact="true" activeclassname="active" to="/">
@@ -23,6 +24,24 @@ const SideBar = () => (
       </NavLink>
 
     </nav>
+    <ul>
+      <li>
+        <a 
+          target="_blank"
+          rel='noreferrer' 
+          href="https://www.linkedin.com/in/joe-valookaran-355569155/">
+          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+        </a>
+      </li>
+      <li>
+        <a 
+          target="_blank"
+          rel='noreferrer' 
+          href="https://github.com/joevalook">
+          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+        </a>
+      </li>
+    </ul>
   </div>
 
 )
