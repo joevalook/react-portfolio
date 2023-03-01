@@ -9,8 +9,8 @@ import Logo from './Logo'
 const Home = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = "oe Valookaran".split("")
-    const jobArray = "Full Stack Web Developer".split("")
+    const nameArray = "oe Valookaran,".split("")
+    const jobArray = "A Full Stack Web Developer".split("")
 
     useEffect(() => {
          setTimeout(() => {
@@ -36,10 +36,10 @@ const Home = () => {
                 <br />
                 <AnimatedLetters letterClass={letterClass}
                 strArray={jobArray}
-                index={31}
+                index={32}
                 />
                 </h1>
-                <h2> Frontend / Backend / React / Angular / NodeJS </h2>
+                <h2> Frontend / Backend / React / Angular / NodeJS / SQL</h2>
                 <Link to="/contact" className='flat-button'> CONTACT ME </Link>
             </div>
             <Logo />
