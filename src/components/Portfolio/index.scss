@@ -7,16 +7,15 @@
     font-family: 'La Belle Aurore'
 }
 .stage-cube-cont{
-    width: 250px;
+    width: 450px;
     height: 100%;
     top: 0;
     padding-top: 18%;
     margin-left: 0;
     position: absolute;
-    right: 100px;
+    right: 15%;
     
 }
-
 
 .cubespinner {
     animation-name: spincube;
@@ -29,34 +28,34 @@
 
     div {
         position: absolute;
-        width: 200px;
-        height: 200px;
+        width: 12vw;
+        height: 12vw;
         border: 1px solid #ccc;
         background: rgba(255,255,255,0.4);
         font-size: 100px;
         display:flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 20px 0px lightyellow;
+        box-shadow: 0 0 30px 0px lightpink;
     }
 
     .face1{
-        transform: translateZ(100px);
+        transform: translateZ(6vw);
     }
     .face2{
-        transform: rotateY(90deg) translateZ(100px);
+        transform: rotateY(90deg) translateZ(6vw);
     }
     .face3{
-        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+        transform: rotateY(90deg) rotateX(90deg) translateZ(6vw);
     }
     .face4{
-        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(6vw);
     }
     .face5{
-        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(6vw);
     }
     .face6{
-        transform: rotateX(-90deg) translateZ(100px);
+        transform: rotateX(-90deg) translateZ(6vw);
     }
 
 
@@ -83,3 +82,5 @@
         transform: rotateX(90deg) rotateZ(90deg)
     }
 }
+
+

@@ -1,10 +1,8 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import { faAngular, faCss3, faGitAlt, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
-import { faDatabase } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import joevalookarn2 from '../../assets/images/joevalookarn2.jpg'
+import Loader from '../Loader'
 
 const About = () => {
 
@@ -15,6 +13,7 @@ const About = () => {
         }, 2000)
     }, [])
     return (
+        <>
         <div className="container about-page">
             <div className="text-zone">
                 <h1>
@@ -30,9 +29,15 @@ const About = () => {
                 <p align= "justify"> Fueled by my boundless energy and high levels of enthusiasm, I enjoy following my imagination in order to create unique designs and build intuitive solutions. I am passionate, diligent and hardworking and will never be content with just ideas; I need to be able to create them! </p>
                 <span className='tag-section' > &lt;/section&gt;</span>
             </div>
+            {/* <div className="profile-image-container"> */}
+                <img src={joevalookarn2} alt="" className="profile-image" />
+            {/* </div> */}
+            
 
 
         </div>
+        <Loader />
+        </>
     )
 }
 

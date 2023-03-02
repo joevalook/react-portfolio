@@ -1,0 +1,221 @@
+$ani-duri: 1.3s;
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 160px;
+  margin: 0;
+  transform: translate(-50%, -50%)
+}
+
+.circles {
+  position: absolute;
+  left: -5px;
+  top: 0;
+  height: 60px;
+  width: 180px
+}
+
+.circles span {
+  position: absolute;
+  top: 25px;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  background-color: #EFEFEF
+}
+
+.circles span.one {
+  right: 80px;
+  animation: animcircles1 0.52s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.circles span.two {
+  right: 40px;
+  animation: animcircles2 $ani-duri 1 linear;
+  animation-fill-mode: forwards;
+}
+
+.circles span.three {
+  right: 0px;
+  animation: animcircles2 $ani-duri 1 linear;
+  animation-fill-mode: forwards;
+}
+.circles span.four{
+  right: -40px;
+  opacity: 0;
+  animation: animcircles3 $ani-duri 1 linear;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes animcircles1 {
+  0% {
+    transform: translate(0px, 0px)
+  }
+  99% {
+    transform: translate(-40px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-40px, 0px);
+    opacity: 0;
+  }
+}
+
+@keyframes animcircles2 {
+  0% {
+    transform: translate(0px, 0px)
+  }
+
+  80% {
+    transform: translate(-80px, 0px);
+    opacity: 1;
+  }
+  100%{
+    opacity: 0%
+  }
+}
+
+@keyframes animcircles3 {
+  0% {
+    transform: translate(0px, 0px)
+  }
+
+  39% {
+    transform: translate(-40px, 0px);
+    opacity: 0;
+  }
+  40% {
+    transform: translate(-40px, 0px)
+  }
+
+  80% {
+    transform: translate(-80px, 0px);
+    opacity: 1;
+  }
+  100%{
+    opacity: 0%
+  }
+}
+
+.pacman {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 60px
+}
+
+.pacman .eye {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  height: 7px;
+  width: 7px;
+  border-radius: 7px;
+  background-color: #1C163A
+}
+
+.pacman span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 60px
+}
+
+.pacman span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 30px;
+  width: 60px;
+  background-color: #ffd700
+}
+
+.pacman .top::before {
+  top: 0;
+  border-radius: 60px 60px 0px 0px
+}
+
+.pacman .bottom::before {
+  bottom: 0;
+  border-radius: 0px 0px 60px 60px
+}
+
+.pacman .left::before {
+  bottom: 0;
+  height: 60px;
+  width: 30px;
+  border-radius: 60px 0px 0px 60px
+}
+
+.pacman .left {
+  animation: animleft $ani-duri 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes animleft {
+
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.pacman .top {
+  animation: animtop $ani-duri 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animtop {
+
+  0%,
+  40%  {
+    transform: rotate(0deg)
+  }
+  20%,
+  60% {
+    transform: rotate(-45deg);
+  }
+  80% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.pacman .bottom {
+  animation: animbottom $ani-duri 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animbottom {
+
+  0%,
+  40% {
+    transform: rotate(0deg)
+  }
+
+  20%,
+  60% {
+    transform: rotate(45deg);
+  }
+  80% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+
+}
