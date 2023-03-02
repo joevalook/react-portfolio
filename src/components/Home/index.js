@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import JoeJ2 from '../../assets/images/JoeJ2.png'
 import AnimatedLetters from '../AnimatedLetters'
+import Loader from '../Loader'
 import './index.scss'
 import Logo from './Logo'
 
@@ -18,6 +19,7 @@ const Home = () => {
         }, 5400)
     }, [])
     return (
+        <>
         <div className="container home-page">
             <div className="text-zone">
                 <h1> 
@@ -44,6 +46,9 @@ const Home = () => {
             </div>
             <Logo />
         </div>
+
+        <Loader />
+        </>
     )
     }
 
