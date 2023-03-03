@@ -31,12 +31,13 @@
         width: 12vw;
         height: 12vw;
         border: 1px solid #ccc;
-        background: rgba(255,255,255,0.4);
+        background: rgb(5, 23, 71);
         font-size: 100px;
         display:flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 30px 0px lightpink;
+        box-shadow: 0 0 20px 0px lightblue;
+        opacity:0.8;
     }
 
     .face1{
