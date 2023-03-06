@@ -14,6 +14,7 @@ const Loader = () => {
         <span className="bottom"></span>
         <span className="left"></span>
       </div>
+      <span className="pacman-tail"></span>
     </div>
   )
 }

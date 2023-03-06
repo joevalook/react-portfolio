@@ -81,8 +81,9 @@ $opacity: 1;
 .info-map{
   position: absolute;
   background-color: #000;
-  top: 20vh;
-  right: 27.1%;
+  margin-top: 20vh;
+  margin-left: 63vw;
+  float: right;
   z-index: 999999;
   width: 150px;
   padding: 20px;
@@ -106,8 +107,8 @@ $opacity: 1;
 .map-wrap {
   background: transparent;
   float: right;
-  width: 30%;
-  height: 50%;
+  width: 30vw;
+  height: 50vh;
   margin-right: 7vw;;
   margin-top: 20vh;
 }

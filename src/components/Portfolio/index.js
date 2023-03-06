@@ -2,10 +2,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss'
 import { faAngular, faCss3, faGitAlt, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
+import Loader from '../Loader';
 
 const Portfolio = () => {
     return (
-
+            <>
             <div className="stage-cube-cont">
                 <div className="cubespinner">
                     <div className="face1">
@@ -29,6 +30,8 @@ const Portfolio = () => {
                 </div>
             </div>
 
+            <Loader />
+            </>
     )
 }
 
