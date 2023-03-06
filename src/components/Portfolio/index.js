@@ -5,14 +5,33 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import Loader from '../Loader';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
+import portfolioData from '../../data/portfolio.json'
 
 const Portfolio = () => {
+    console.log(portfolioData)
     const [letterClass, setLetterClass] = useState('text-animate')
     useEffect(() => {
         setTimeout(() => {
             return setLetterClass('text-animate-hover')
         }, 2000)
     }, [])
+
+const renderPortfolio = (portfolioArray) => {
+    return (
+        <div className="images-container">
+            {
+                portfolioArray.map((port, index) => {
+                    return (
+                        <div className= "image-box" key={index}>
+                            <img src="port.cover" alt="project image" className='portfolio-image' />
+                        </div>
+                    )
+                })
+            }
+        </div>
+    )
+}
+
     return (
         <>
             <div className="container portfolio-page">
@@ -24,6 +43,9 @@ const Portfolio = () => {
                             index={15}
                         />
                     </h1>
+                    <div>
+                        {renderPortfolio(portfolioData.portfolio)}
+                    </div>
                 </div>
                 <div className="stage-cube-cont">
                     <div className="cubespinner">
