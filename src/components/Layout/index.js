@@ -1,16 +1,19 @@
 import { Outlet } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDatabase  } from '@fortawesome/free-solid-svg-icons'
+import { faAngular, faCss3, faGitAlt, faNodeJs, faReact  } from '@fortawesome/free-brands-svg-icons'
 import SideBar from '../Sidebar';
 import './index.scss';
 
 const Layout = () => {
-  return <> 
+  return <>
     <div className='App'>
-      <SideBar /> 
+      <SideBar />
       <div className='page'>
-        <span className="tags top-tags tag-html"> 
+        <span className="tags top-tags tag-html">
           &lt;html&gt;
           <br />
-        <span className='tag-body-top' > &lt;body&gt;</span>          
+          <span className='tag-body-top' > &lt;body&gt;</span>
         </span>
 
         <Outlet />
