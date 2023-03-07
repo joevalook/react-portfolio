@@ -44,7 +44,7 @@ const Contact = () => {
           </h1>
           <span className='tag-section' > &lt;article&gt;</span>
           <p align="justify" className='contact-para'>
-            I am interested in a junior developement position at a company that provides a great learning culture. If you have any other questions, concerns or would like to get to know me better, please feel free to use the contact form below to contact me via the form below.
+            I am interested in a junior developement position at a company that provides a great learning culture. If you have any other questions, concerns or would like to get to know me better, please feel free to use the contact form below to send me an email. Thanks!
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>

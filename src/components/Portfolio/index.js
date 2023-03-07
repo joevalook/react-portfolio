@@ -23,7 +23,7 @@ const renderPortfolio = (portfolioArray) => {
                 portfolioArray.map((port, index) => {
                     return (
                         <div className= "image-box" key={index}>
-                            <img src="port.cover" alt="project image" className='portfolio-image' />
+                            <img src={port.cover} alt="project" className='portfolio-image' />
                         </div>
                     )
                 })

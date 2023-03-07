@@ -1,7 +1,25 @@
 {
   "portfolio":[
     {
-      "cover": "../public/portfolio/1/interview_scheduler.png",
+      "cover": "/portfolio/1/interview_scheduler.png",
+      "title":  "Interview Scheduler",
+      "description": "React, JSX, Axios, Classnames, Normalize, Storybook, Jest, Cypress",
+      "url": "http://google.com"
+    },
+    {
+      "cover": "/portfolio/1/interview_scheduler.png",
+      "title":  "Interview Scheduler",
+      "description": "React, JSX, Axios, Classnames, Normalize, Storybook, Jest, Cypress",
+      "url": "http://google.com"
+    },
+    {
+      "cover": "/portfolio/1/interview_scheduler.png",
+      "title":  "Interview Scheduler",
+      "description": "React, JSX, Axios, Classnames, Normalize, Storybook, Jest, Cypress",
+      "url": "http://google.com"
+    },
+    {
+      "cover": "/portfolio/1/interview_scheduler.png",
       "title":  "Interview Scheduler",
       "description": "React, JSX, Axios, Classnames, Normalize, Storybook, Jest, Cypress",
       "url": "http://google.com"
