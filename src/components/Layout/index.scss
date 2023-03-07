@@ -42,7 +42,22 @@
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }
-
+.flat-button {
+    color: #ffd700;
+    background: transparent;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #ffd700;
+    float: right;
+    border-radius: 4px;
+  }
+  .flat-button:hover{
+    color: #022c43;
+    background: #ffd700;
+    cursor:pointer;
+  }
 .about-page,
 .contact-page,
 .portfolio-page {

@@ -22,17 +22,35 @@ const Portfolio = () => {
                 {
                     portfolioArray.map((port, index) => {
                         return (
-                            <article className='portfolio_item'>
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    <div className="flip-card-front">
+                                        <img src={port.cover} alt="project" className='portfolio-image' />
+                                    </div>
+                                    <div className="flip-card-back">
+                                        <h3>{port.title}</h3>
+                                        <p>{port.description}</p>
+                                        <p>Stack: {port.stack}</p>
+                                        <div className='portfolio-buttons'>
+                                            <a href={port.url} className='flat-button' target='_blank'> URL</a>
+                                            <a href={port.github} className='flat-button' target='_blank'> Github</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            /* <article className='portfolio_item'>
                                 <div className="portfolio_item-image" key={index}>
                                     <img src={port.cover} alt="project" className='portfolio-image' />
                                 </div>
                                 <h3> {port.title}</h3>
-                                <a href={port.url} className='btn btn-primary' target='_blank'> URL</a>
-                                <a href={port.github} className='btn' target='_blank'> Github</a>
+                                <div className='portfolio-buttons'>
+                                    <a href={port.url} className='flat-button' target='_blank'> URL</a>
+                                    <a href={port.github} className='flat-button' target='_blank'> Github</a>
+                                </div>
 
-                            </article>
+                            </article> */
                         )
-                    })
+                })
                 }
             </div>
         )
