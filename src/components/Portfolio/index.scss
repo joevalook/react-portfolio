@@ -160,7 +160,7 @@ img {
     display: flex;
     justify-content: space-around;
 }
-h1 {
+.portfolio-heading {
     display: flex;
     font-size: 60px;
     font-family: Coolvetica;
@@ -175,13 +175,22 @@ h1 {
 
 .flip-card {
     background-color: transparent;
+    opacity: 0;
     width: 400px;
-    height: 250px;
+    height: 300px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     padding: 2rem;
     border-radius: 2rem;
-    border: 1px solid transparent
+    border: 1px solid white;
+    animation: fadeInUp 2s 1s;
+    animation-fill-mode: forwards;
   }
+
+  @for $i from 1 through 4 {
+    .flip-card._#{$i} {
+        animation-delay: #{$i /2 + 1}s;
+    }
+}
   
   /* This container is needed to position the front and back side */
   .flip-card-inner {
@@ -219,9 +228,21 @@ h1 {
   .flip-card-back {
     background-color: transparent;
     transform: rotateY(180deg);
-    border: 1px solid white;
+    border: 1px solid transparent;
+    align-items: center;
   }
   h3 {
+    padding-top: 40px;
+    font-size: 20px;
+    font-family: Coolvetica;
+    color: #ffd700;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 0px;
+    left: 10px;
+  }
+  h4 {
     padding-top: 20px;
     font-size: 20px;
     font-family: Coolvetica;

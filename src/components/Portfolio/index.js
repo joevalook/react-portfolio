@@ -22,10 +22,11 @@ const Portfolio = () => {
                 {
                     portfolioArray.map((port, index) => {
                         return (
-                            <div className="flip-card">
+                            <div className={`flip-card _${index}`} key={index}>
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
                                         <img src={port.cover} alt="project" className='portfolio-image' />
+                                        <h4>{port.title}</h4>
                                     </div>
                                     <div className="flip-card-back">
                                         <h3>{port.title}</h3>
@@ -60,7 +61,7 @@ const Portfolio = () => {
         <>
             <div className="container portfolio-page">
                 <div className="text-zone-portfolio">
-                    <h1>
+                    <h1 className='portfolio-heading'>
                         <AnimatedLetters
                             letterClass={letterClass}
                             strArray={"Portfolio".split("")}

@@ -17,6 +17,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
+    document.getElementById("sendButton").value = "SENDING..."
     emailjs.sendForm(
       'service_lbsjphn',
       'template_0pig7o8',
@@ -25,8 +26,10 @@ const Contact = () => {
     )
       .then(function () {
         alert('Message Successfully Sent');
+        document.getElementById("sendButton").value = "SEND"
         window.location.reload(false)
       }, function (error) {
+        document.getElementById("sendButton").value = "SEND"
         alert('Failed to sent message, please try again');
       });
 
@@ -62,7 +65,7 @@ const Contact = () => {
                   <textarea name="message" placeholder="Message" required></textarea>
                 </li>
                 <li>
-                  <input type="submit" className='flat-button' value="SEND" />
+                  <input id="sendButton" type="submit" className='flat-button' value="SEND" />
                 </li>
               </ul>
             </form>
