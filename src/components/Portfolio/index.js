@@ -16,26 +16,32 @@ const Portfolio = () => {
         }, 2000)
     }, [])
 
-const renderPortfolio = (portfolioArray) => {
-    return (
-        <div className="images-container">
-            {
-                portfolioArray.map((port, index) => {
-                    return (
-                        <div className= "image-box" key={index}>
-                            <img src={port.cover} alt="project" className='portfolio-image' />
-                        </div>
-                    )
-                })
-            }
-        </div>
-    )
-}
+    const renderPortfolio = (portfolioArray) => {
+        return (
+            <div className='portfolio-container'>
+                {
+                    portfolioArray.map((port, index) => {
+                        return (
+                            <article className='portfolio_item'>
+                                <div className="portfolio_item-image" key={index}>
+                                    <img src={port.cover} alt="project" className='portfolio-image' />
+                                </div>
+                                <h3> {port.title}</h3>
+                                <a href={port.url} className='btn btn-primary' target='_blank'> URL</a>
+                                <a href={port.github} className='btn' target='_blank'> Github</a>
+
+                            </article>
+                        )
+                    })
+                }
+            </div>
+        )
+    }
 
     return (
         <>
             <div className="container portfolio-page">
-                <div className="text-zone">
+                <div className="text-zone-portfolio">
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
@@ -43,11 +49,12 @@ const renderPortfolio = (portfolioArray) => {
                             index={15}
                         />
                     </h1>
-                    <div>
-                        {renderPortfolio(portfolioData.portfolio)}
-                    </div>
                 </div>
-                <div className="stage-cube-cont">
+                <div >
+                    {renderPortfolio(portfolioData.portfolio)}
+                </div>
+
+                {/* <div className="stage-cube-cont">
                     <div className="cubespinner">
                         <div className="face1">
                             <FontAwesomeIcon icon={faAngular} color="#DD0031" />
@@ -68,7 +75,7 @@ const renderPortfolio = (portfolioArray) => {
                             <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <Loader />

@@ -4,25 +4,29 @@
       "cover": "/portfolio/1/interview_scheduler.png",
       "title":  "Interview Scheduler",
       "description": "React, JSX, Axios, Classnames, Normalize, Storybook, Jest, Cypress",
-      "url": "http://google.com"
+      "url": "http://google.com",
+      "github": "https://github.com/joevalook/scheduler"
     },
     {
       "cover": "/portfolio/1/interview_scheduler.png",
       "title":  "Interview Scheduler",
       "description": "React, JSX, Axios, Classnames, Normalize, Storybook, Jest, Cypress",
-      "url": "http://google.com"
+      "url": "http://google.com",
+      "github": "http://google.com"
     },
     {
       "cover": "/portfolio/1/interview_scheduler.png",
       "title":  "Interview Scheduler",
       "description": "React, JSX, Axios, Classnames, Normalize, Storybook, Jest, Cypress",
-      "url": "http://google.com"
+      "url": "http://google.com",
+      "github": "http://google.com"
     },
     {
       "cover": "/portfolio/1/interview_scheduler.png",
       "title":  "Interview Scheduler",
       "description": "React, JSX, Axios, Classnames, Normalize, Storybook, Jest, Cypress",
-      "url": "http://google.com"
+      "url": "http://google.com",
+      "github": "http://google.com"
     }
   ]
 }
