@@ -9,10 +9,10 @@
       "github": "https://github.com/joevalook/scheduler"
     },
     {
-      "cover": "/portfolio/1/interview_scheduler.png",
-      "title":  "Interview Scheduler",
-      "stack": "React, JSX, Axios, Classnames, Normalize, Storybook, Jest, Cypress",
-      "description": "React based project to create meetings for students with mentors in real-time.",
+      "cover": "/portfolio/2/globalWeatherApp.png",
+      "title":  "Global Weather Visualizer",
+      "stack": "Angular, rapidAPI, Axios, SCSS, Typescript, Karma",
+      "description": "Angular based project to display weather around the world utilizing weatherAPI.",
       "url": "http://google.com",
       "github": "http://google.com"
     },
