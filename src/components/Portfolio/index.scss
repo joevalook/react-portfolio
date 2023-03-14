@@ -6,7 +6,8 @@
     font-size: 20px;
     font-family: 'La Belle Aurore'
 }
-.stage-cube-cont{
+
+.stage-cube-cont {
     width: 450px;
     height: 100%;
     top: 0;
@@ -14,7 +15,7 @@
     margin-left: 0;
     position: absolute;
     right: 5%;
-    
+
 }
 
 .cubespinner {
@@ -33,29 +34,34 @@
         border: 1px solid #ccc;
         background: rgb(5, 23, 71);
         font-size: 100px;
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         box-shadow: 0 0 20px 0px lightblue;
-        opacity:0.8;
+        opacity: 0.8;
     }
 
-    .face1{
+    .face1 {
         transform: translateZ(6vw);
     }
-    .face2{
+
+    .face2 {
         transform: rotateY(90deg) translateZ(6vw);
     }
-    .face3{
+
+    .face3 {
         transform: rotateY(90deg) rotateX(90deg) translateZ(6vw);
     }
-    .face4{
+
+    .face4 {
         transform: rotateY(180deg) rotateZ(90deg) translateZ(6vw);
     }
-    .face5{
+
+    .face5 {
         transform: rotateY(-90deg) rotateZ(90deg) translateZ(6vw);
     }
-    .face6{
+
+    .face6 {
         transform: rotateX(-90deg) translateZ(6vw);
     }
 
@@ -63,34 +69,41 @@
 }
 
 @keyframes spincube {
-    from, 
+
+    from,
     to {
         transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)
     }
-    16%{
+
+    16% {
         transform: rotateY(-90deg)
     }
-    33%{
+
+    33% {
         transform: rotateY(-90deg) rotateZ(90deg)
     }
-    50%{
+
+    50% {
         transform: rotateY(-180deg) rotateZ(90deg)
     }
-    66%{
+
+    66% {
         transform: rotateY(-270deg) rotateZ(90deg)
     }
-    83%{
+
+    83% {
         transform: rotateX(90deg) rotateZ(90deg)
     }
 }
 
-.portfolio-page{
+.portfolio-page {
     padding-left: 100px;
     padding-right: 50px;
     width: calc(100% - 150px);
     position: initial;
     height: 100%;
     overflow: auto;
+
     .images-container {
         display: flex;
         gap: 15px;
@@ -98,22 +111,21 @@
         padding-bottom: 100px;
     }
 
-    .image-box{
+    .image-box {
         position: relative;
         flex: 1 1 20%;
         height: 400px;
         overflow: hidden;
         border-radius: 10px;
         max-width: calc(25% - 10px);
-
-        .portfolio-image {
-            position: absolute;
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
     }
+
+    .portfolio-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
 
 }
 
@@ -146,9 +158,9 @@ img {
     border-radius: 6px;
 }
 
-.portfolio-container{
+.portfolio-container {
     display: grid;
-    grid-template-columns: 40% 40% ;
+    grid-template-columns: 40% 40%;
     gap: 4.5rem;
     width: 80%;
     margin-left: 180px;
@@ -156,10 +168,12 @@ img {
     justify-content: space-around;
 
 }
+
 .portfolio-buttons {
     display: flex;
     justify-content: space-around;
 }
+
 .portfolio-heading {
     display: flex;
     font-size: 60px;
@@ -178,22 +192,23 @@ img {
     opacity: 0;
     width: 400px;
     height: 300px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
     padding: 2rem;
     border-radius: 2rem;
     border: 1px solid white;
     animation: fadeInUp 2s 1s;
     animation-fill-mode: forwards;
-  }
+}
 
-  @for $i from 1 through 4 {
+@for $i from 1 through 4 {
     .flip-card._#{$i} {
         animation-delay: #{$i /2 + 1}s;
     }
 }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -201,37 +216,40 @@ img {
     transition: transform 0.8s;
     transform-style: preserve-3d;
     justify-content: center;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
     border-radius: 6px;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
     background-color: transparent;
     color: black;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
+}
+
+/* Style the back side */
+.flip-card-back {
     background-color: transparent;
     transform: rotateY(180deg);
     border: 1px solid transparent;
     align-items: center;
-  }
-  h3 {
+}
+
+h3 {
     padding-top: 40px;
     font-size: 20px;
     font-family: Coolvetica;
@@ -241,8 +259,9 @@ img {
     position: relative;
     margin-bottom: 0px;
     left: 10px;
-  }
-  h4 {
+}
+
+h4 {
     padding-top: 20px;
     font-size: 20px;
     font-family: Coolvetica;
@@ -252,11 +271,12 @@ img {
     position: relative;
     margin-bottom: 0px;
     left: 10px;
-  }
-  p {
+}
+
+p {
     font-size: 16px;
     color: #fff;
     font-family: sans-serif;
     font-weight: 300px;
     min-width: fit-content;
-  }
+}
